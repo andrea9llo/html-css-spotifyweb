@@ -3,22 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
 
 main{
   display: flex;
   height: calc(100vh - 100px);
 }
-
+/* MENU */
 .flex-left{
   flex-basis: 15%;
   background-image: linear-gradient(to right bottom, rgb(18, 18, 18), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
+/* BRANI */
 .flex-right{
   flex-basis: 85%;
   overflow-y: scroll;
   background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  padding: 30px 35px;
 }
+/* nac */
+.flex-right-lista{
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.flex-right-lista>ul>li{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding:  0 2%;
+}
+#evidenza{
+  color: white;
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+}
+.lista-nav{
+  color: rgba(255, 255, 255, 0.5);
+}
+.lista-nav:hover{
+  color: rgb(255,255, 255);
+}
+/* sezioni musica */
+.titolo-sez-music{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+h2{
+  color: rgb(255,255, 255);
+  font-size: 34px;
+}
+h2:hover{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+h6{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  transition:  transform 0.1s
+}
+h6:hover{
+  color: rgb(255,255, 255);
+  cursor: pointer;
+  transform: scale(0.999);
+}
+/* PLAY MUSIC  */
 .play-music{
   height: 100px;
   background-color: #181818;
