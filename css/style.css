@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main{
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.flex-left{
+  flex-basis: 15%;
+  background-image: linear-gradient(to right bottom, rgb(18, 18, 18), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+}
+.flex-right{
+  flex-basis: 85%;
+  overflow-y: scroll;
+  background-image: linear-gradient(to right bottom, rgb(46, 107, 55), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+}
+.play-music{
+  height: 100px;
+  background-color: #181818;
+}
