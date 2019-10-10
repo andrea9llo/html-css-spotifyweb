@@ -9,7 +9,7 @@ body{
 
 main{
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
 }
 /* MENU */
 .flex-left{
@@ -54,12 +54,13 @@ a{
 .titolo-sez-music{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 80px;
+  margin-bottom: 30px;
 }
 h2{
   color: rgb(255,255, 255);
-  font-size: 34px;
+  font-size: 35px;
 }
 h2:hover{
   border-bottom: 1px solid white;
@@ -73,10 +74,67 @@ h6{
 h6:hover{
   color: rgb(255,255, 255);
   cursor: pointer;
-  transform: scale(0.999);
+  transform: scale(0.97);
 }
+/* album */
+.album{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.music{
+  flex-basis: calc(94% / 6);
+}
+.img-album{
+  position: relative;
+}
+.play-album{
+  color: white;
+  font-size: 35px;
+  border: 1px solid white;
+  padding: 15px 20px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.music:hover img{
+  opacity: 0.1;
+  cursor: pointer;
+}
+.music:hover .play-album{
+  display: inline-block;
+  cursor: pointer;
+}
+.img-album img{
+  max-width: 100%;
+}
+
+.text-album{
+  text-align: center;
+  margin: 6px 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:991px){
+  .music{
+    flex-basis: calc(94% / 3);
+  }
+}
+@media screen and (max-width:767px){
+  .music{
+    flex-basis: calc(94% / 2);
+  }
+}
+
 /* PLAY MUSIC  */
 .play-music{
-  height: 100px;
+  height: 90px;
   background-color: #181818;
 }
