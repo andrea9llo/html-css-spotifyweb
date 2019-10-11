@@ -41,8 +41,12 @@ a{
 }
 #evidenza{
   color: white;
-  border-bottom: 2px solid red;
-  padding-bottom: 2px;
+}
+.linea{
+  height: 2px;
+  background-color: red;
+  width: 25px;
+  margin: auto;
 }
 .lista-nav{
   color: rgba(255, 255, 255, 0.5);
@@ -131,6 +135,22 @@ h6:hover{
   .music{
     flex-basis: calc(94% / 2);
   }
+}
+/* artisti */
+.artisti img{
+  border-radius: 100%;
+}
+/* motivation */
+.album-motivation{
+  display: flex;
+  flex-wrap: wrap;
+}
+.par-h2{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.album-motivation .img-album{
+  margin-right: 10px;
 }
 
 /* PLAY MUSIC  */
