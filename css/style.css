@@ -15,7 +15,62 @@ main{
 .flex-left{
   flex-basis: 15%;
   background-image: linear-gradient(to right bottom, rgb(18, 18, 18), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  padding: 2% 2% 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.logogrande{
+  max-width: 80%;
+}
+.logo{
+  max-width: 60%;
+  display: none;
+}
+/* icone spotify */
+.menu{
+  margin-top: 35px;
+}
+.icone-home-spotify{
+  width: 30px;
+}
+#home{
+  color: white;
+}
+.cerca,.casa,.libreria{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.installa:hover{
+  color: white;
+  cursor: pointer;
+}
+/* login */
+.app{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.linea-profilo{
+  width: 100%;
+  margin: auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.icona-app{
+  color: rgba(255, 255, 255, 0.5);
+}
+.installa{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  margin-left: 15px;
+}
+.fa-user{
+  font-size: 30px;
+}
+
 /* BRANI */
 .flex-right{
   flex-basis: 85%;
@@ -126,32 +181,7 @@ h6:hover{
   color: white;
   cursor: pointer;
 }
-/* @media query */
-@media screen and (max-width:1199px){
-  .music{
-    flex-basis: calc(94% / 5);
-  }
-}
-@media screen and (max-width:991px){
-  .music{
-    flex-basis: calc(94% / 3);
-  }
 
-}
-@media screen and (max-width:767px){
-  .music{
-    flex-basis: calc(94% / 2);
-  }
-  h2{
-    font-size: 25px;
-  }
-  h6{
-    font-size: 10px;
-  }
-  .foot-center{
-    display: none;
-  }
-}
 /* artisti */
 .artisti img{
   border-radius: 100%;
@@ -182,9 +212,10 @@ h6:hover{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .song-play{
-  flex-basis: 18%;
+  flex-basis: 20%;
 }
 .song-play>img{
   max-width: 100%;
@@ -276,4 +307,36 @@ h5:hover{
 }
 .icone-vol{
   padding: 0 5px;
+}
+/* @media query */
+@media screen and (max-width:1199px){
+  .music{
+    flex-basis: calc(94% / 5);
+  }
+}
+@media screen and (max-width:991px){
+  .music{
+    flex-basis: calc(94% / 3);
+  }
+  .installa{
+    display: none;
+  }
+
+}
+@media screen and (max-width:767px){
+  .music{
+    flex-basis: calc(94% / 2);
+  }
+  h2{
+    font-size: 25px;
+  }
+  h6{
+    font-size: 10px;
+  }
+  .song-play,.logogrande{
+  display: none;
+  }
+  .logo{
+    display: block;
+  }
 }
