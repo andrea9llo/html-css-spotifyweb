@@ -282,10 +282,10 @@ h5:hover{
   display: flex;
   align-items: center;
 }
-.caricamento-music-int:hover{
+.caricamento-music:hover .caricamento-music-int{
   background-color: green;
 }
-.caricamento-music-int:hover .pallina{
+.caricamento-music:hover .pallina{
   display: block;
 }
 .time{
@@ -315,7 +315,7 @@ h5:hover{
   display: flex;
   align-items: center;
 }
-.volume:hover{
+.barra-volume:hover .volume{
   background-color: green;
 }
 .pallina{
@@ -326,7 +326,7 @@ h5:hover{
   margin-left: 86%;
   display: none;
 }
-.volume:hover .pallina{
+.barra-volume:hover .pallina{
   display: block;
 }
 .icone-vol{
