@@ -19,6 +19,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 .logogrande{
   max-width: 80%;
@@ -42,14 +43,14 @@ main{
   align-items: center;
   margin-bottom: 15px;
 }
-.installa:hover , #p-playlist:hover{
+.installa:hover , #p-playlist:hover,.lista-playlist:hover{
   color: white;
   cursor: pointer;
 }
 
 /* playlist */
 .playlist{
- flex-grow: 1;
+ margin-top: 20px;
 }
 #p-playlist{
   font-size: 18px;
@@ -59,6 +60,8 @@ main{
 .menu-playlist{
   overflow-y: scroll;
   height: 150px;
+}
+.lista-playlist{
   color: rgba(255, 255, 255, 0.5);
 }
 /* login */
@@ -217,9 +220,13 @@ h6:hover{
 /* PLAY MUSIC  */
 .play-music{
   height: 90px;
+  width: 100%;
   background-color: #181818;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+
 }
 /* foot left */
 .foot-left{
