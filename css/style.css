@@ -42,9 +42,24 @@ main{
   align-items: center;
   margin-bottom: 15px;
 }
-.installa:hover{
+.installa:hover , #p-playlist:hover{
   color: white;
   cursor: pointer;
+}
+
+/* playlist */
+.playlist{
+ flex-grow: 1;
+}
+#p-playlist{
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.menu-playlist{
+  overflow-y: scroll;
+  height: 150px;
+  color: rgba(255, 255, 255, 0.5);
 }
 /* login */
 .app{
