@@ -5,7 +5,7 @@
 }
 body{
   font-family: Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main{
@@ -247,16 +247,16 @@ h6:hover{
   margin: 0 10px;
   cursor: pointer;
 }
-h5{
+#text-song{
   color: white;
   font-size: 14px;
   margin-bottom: 3px;
   border-bottom: 1px solid transparent;
 }
-h5:hover{
+#text-song:hover{
   border-bottom: 1px solid white;
 }
-.par-h5{
+#par-h5{
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
